@@ -1,0 +1,70 @@
+
+praveen@DELL MINGW64 /e/Tech/Python/ud858-master/Lesson_2/000_Hello_Endpoints
+$ git init
+Initialized empty Git repository in E:/Tech/Python/ud858-master/Lesson_2/000_Hello_Endpoints/.git/
+
+praveen@DELL MINGW64 /e/Tech/Python/ud858-master/Lesson_2/000_Hello_Endpoints (master)
+$ git add .
+warning: LF will be replaced by CRLF in app.yaml.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in helloworld_api.py.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in static/hello.js.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in static/index.html.
+The file will have its original line endings in your working directory.
+
+praveen@DELL MINGW64 /e/Tech/Python/ud858-master/Lesson_2/000_Hello_Endpoints (master)
+$
+
+praveen@DELL MINGW64 /e/Tech/Python/ud858-master/Lesson_2/000_Hello_Endpoints (master)
+$ git commit -m "first"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'praveen@DELL.(none)')
+
+praveen@DELL MINGW64 /e/Tech/Python/ud858-master/Lesson_2/000_Hello_Endpoints (master)
+$ git config --global user.email "tnpraveen87@gmail.com"
+
+praveen@DELL MINGW64 /e/Tech/Python/ud858-master/Lesson_2/000_Hello_Endpoints (master)
+$ git config --global user.name "praveentn"
+
+praveen@DELL MINGW64 /e/Tech/Python/ud858-master/Lesson_2/000_Hello_Endpoints (master)
+$ git commit -m "first"
+[master (root-commit) 890097f] first
+ 5 files changed, 219 insertions(+)
+ create mode 100644 app.yaml
+ create mode 100644 helloworld_api.py
+ create mode 100644 helloworld_api.pyc
+ create mode 100644 static/hello.js
+ create mode 100644 static/index.html
+
+praveen@DELL MINGW64 /e/Tech/Python/ud858-master/Lesson_2/000_Hello_Endpoints (master)
+$ git remote add origin https://github.com/praveentn/vanpeer
+
+praveen@DELL MINGW64 /e/Tech/Python/ud858-master/Lesson_2/000_Hello_Endpoints (master)
+$ git remote -v
+origin  https://github.com/praveentn/vanpeer (fetch)
+origin  https://github.com/praveentn/vanpeer (push)
+
+praveen@DELL MINGW64 /e/Tech/Python/ud858-master/Lesson_2/000_Hello_Endpoints (master)
+$ git push origin master
+Counting objects: 8, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 4.14 KiB | 1.38 MiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0)
+To https://github.com/praveentn/vanpeer
+ * [new branch]      master -> master
+
+praveen@DELL MINGW64 /e/Tech/Python/ud858-master/Lesson_2/000_Hello_Endpoints (master)
+$

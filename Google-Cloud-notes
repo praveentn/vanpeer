@@ -1,0 +1,131 @@
+Welcome to the Google Cloud SDK! Run "gcloud -h" to get the list of available commands.
+---
+Welcome! This command will take you through the configuration of gcloud.
+
+Your current configuration has been set to: [default]
+
+You can skip diagnostics next time by using the following flag:
+  gcloud init --skip-diagnostics
+
+Network diagnostic detects and fixes local network connection issues.
+Checking network connection...done.
+Reachability Check passed.
+Network diagnostic (1/1 checks) passed.
+
+You must log in to continue. Would you like to log in (Y/n)?  y
+
+Your browser has been opened to visit:
+
+    https://accounts.google.com/o/oauth2/auth?redirect_uri=http%3A%2F%2Flocalhost%3A8085%2F&prompt=select_account&response_type=code&client_id=32555940559.apps.googleusercontent.com&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fappengine.admin+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcompute+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Faccounts.reauth&access_type=offline
+
+
+You are logged in as: [tnpraveen87@gmail.com].
+
+Pick cloud project to use:
+ [1] van-peer
+ [2] Create a new project
+Please enter numeric choice or text value (must exactly match list
+item):  1
+
+Your current project has been set to: [van-peer].
+
+Not setting default zone/region (this feature makes it easier to use
+[gcloud compute] by setting an appropriate default value for the
+--zone and --region flag).
+See https://cloud.google.com/compute/docs/gcloud-compute section on how to set
+default compute region and zone manually. If you would like [gcloud init] to be
+able to do this for you the next time you run it, make sure the
+Compute Engine API is enabled for your project on the
+https://console.developers.google.com/apis page.
+
+Created a default .boto configuration file at [C:\Users\praveen\.boto]. See this file and
+[https://cloud.google.com/storage/docs/gsutil/commands/config] for more
+information about configuring Google Cloud Storage.
+Your Google Cloud SDK is configured and ready to use!
+
+* Commands that require authentication will use tnpraveen87@gmail.com by default
+* Commands will reference project `van-peer` by default
+Run `gcloud help config` to learn how to change individual settings
+
+This gcloud configuration is called [default]. You can create additional configurations if you work with multiple accounts and/or projects.
+Run `gcloud topic configurations` to learn more.
+
+Some things to try next:
+
+* Run `gcloud --help` to see the Cloud Platform services you can interact with. And run `gcloud help COMMAND` to get help on any gcloud command.
+* Run `gcloud topic -h` to learn about advanced features of the SDK like arg files and output formatting
+
+E:\Program files\Google>gcloud app deploy app.yaml
+ERROR: (gcloud.app.deploy) [E:\Program files\Google\app.yaml] does not exist.
+
+E:\Program files\Google>e:
+
+E:\Program files\Google>cd \
+
+E:\>cd Tech\Python\ud858-master\Lesson_2\000_Hello_Endpoints\
+
+E:\Tech\Python\ud858-master\Lesson_2\000_Hello_Endpoints>gcloud app deploy app.yaml
+ERROR: (gcloud.app.deploy) The [application] field is specified in file [E:\Tech\Python\ud858-master\Lesson_2\000_Hello_Endpoints\app.yaml]. This field is not used by gcloud and must be removed. Project name should instead be specified either by `gcloud config set project MY_PROJECT` or by setting the `--project` flag on individual command executions.
+
+E:\Tech\Python\ud858-master\Lesson_2\000_Hello_Endpoints>gcloud config set project van-peer
+Updated property [core/project].
+
+E:\Tech\Python\ud858-master\Lesson_2\000_Hello_Endpoints>gcloud app deploy app.yaml
+ERROR: (gcloud.app.deploy) The [version] field is specified in file [E:\Tech\Python\ud858-master\Lesson_2\000_Hello_Endpoints\app.yaml]. This field is not used by gcloud and must be removed. Versions are generated automatically by default but can also be manually specified by setting the `--version` flag on individual command executions.
+
+E:\Tech\Python\ud858-master\Lesson_2\000_Hello_Endpoints>gcloud app deploy app.yaml
+You are creating an app for project [van-peer].
+WARNING: Creating an App Engine application for a project is irreversible and the region
+cannot be changed. More information about regions is at
+https://cloud.google.com/appengine/docs/locations.
+
+Please choose the region where you want your App Engine application
+located:
+
+ [1] europe-west   (supports standard and flexible)
+ [2] europe-west2  (supports standard and flexible)
+ [3] europe-west3  (supports standard and flexible)
+ [4] us-east1      (supports standard and flexible)
+ [5] us-central    (supports standard and flexible)
+ [6] us-east4      (supports standard and flexible)
+ [7] asia-northeast1 (supports standard and flexible)
+ [8] australia-southeast1 (supports standard and flexible)
+ [9] cancel
+Please enter your numeric choice:  7
+
+Creating App Engine application in project [van-peer] and region [asia-northeast1]....done.
+Services to deploy:
+
+descriptor:      [E:\Tech\Python\ud858-master\Lesson_2\000_Hello_Endpoints\app.yaml]
+source:          [E:\Tech\Python\ud858-master\Lesson_2\000_Hello_Endpoints]
+target project:  [van-peer]
+target service:  [default]
+target version:  [20170826t001743]
+target url:      [https://van-peer.appspot.com]
+
+
+Do you want to continue (Y/n)?  y
+
+Beginning deployment of service [default]...
+Some files were skipped. Pass `--verbosity=info` to see which ones.
+You may also view the gcloud log file, found at
+[C:\Users\praveen\AppData\Roaming\gcloud\logs\2017.08.26\00.16.53.490000.log].
+╔════════════════════════════════════════════════════════════╗
+╠═ Uploading 4 files to Google Cloud Storage                ═╣
+╚════════════════════════════════════════════════════════════File upload done.
+Updating service [default]...done.
+Waiting for operation [apps/van-peer/operations/8e33525b-a4ec-41fb-b085-989f3d3fc4db] to complete...done.
+Updating service [default]...done.
+Deployed service [default] to [https://van-peer.appspot.com]
+
+You can stream logs from the command line by running:
+  $ gcloud app logs tail -s default
+
+To view your application in the web browser run:
+  $ gcloud app browse
+
+E:\Tech\Python\ud858-master\Lesson_2\000_Hello_Endpoints>
+
+
+
+
